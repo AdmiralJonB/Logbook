@@ -50,7 +50,7 @@ public partial class MainWindow: Gtk.Window
 			return;
 		}
 		
-		string query = "SELECT date, text FROM log ORDER BY date, id;";
+		string query = "SELECT DATE(CONVERT_TZ(date,'UTC','GMT')) , text FROM log ORDER BY date, id;";
 		
 		MySqlDataReader rdr = MySQL_Stuff.ExecuteQuery(query);
 		

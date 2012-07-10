@@ -25,12 +25,12 @@ namespace FrontEnd
 		protected void GetLogbook()
 		{
 			//Create the SQL Query
-			string query = "SELECT text FROM log WHERE date = \'";
+			string query = "SELECT text FROM log WHERE date = DATE(CONVERT_TZ(\'";
 			
 			query += calendar1.Date.Year + "-";
 			query += (calendar1.Date.Month < 10 ? 0 + calendar1.Date.Month.ToString() : calendar1.Date.Month.ToString()) + "-";
 			query += (calendar1.Date.Day < 10 ? 0 + calendar1.Date.Day.ToString() : calendar1.Date.Day.ToString());
-			query += "\' ORDER BY id;";
+			query += "\','GMT','UTC')) ORDER BY id;";
 			
 			//Clear the textviewer in preperation
 			textview1.Buffer.Clear();
