@@ -8,7 +8,6 @@
     <ProjectGuid>{8468D90E-C4DB-4D21-9DB5-AC2958A60438}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>FrontEnd</RootNamespace>
-    <AssemblyName>FrontEnd</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>true</DebugSymbols>
@@ -71,7 +70,6 @@
     <Compile Include="MainWindow.cs" />
     <Compile Include="gtk-gui\MainWindow.cs" />
     <Compile Include="Main.cs" />
-    <Compile Include="AssemblyInfo.cs" />
     <Compile Include="LogEntry.cs" />
     <Compile Include="gtk-gui\FrontEnd.LogEntry.cs" />
     <Compile Include="MySQL Stuff.cs" />
