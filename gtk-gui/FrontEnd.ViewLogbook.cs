@@ -5,15 +5,11 @@ namespace FrontEnd
 	public partial class ViewLogbook
 	{
 		private global::Gtk.VBox vbox3;
-
 		private global::Gtk.Calendar calendar1;
-
 		private global::Gtk.ScrolledWindow GtkScrolledWindow;
-
 		private global::Gtk.TextView textview1;
-
 		private global::Gtk.Button btnClose;
-
+		
 		protected virtual void Build ()
 		{
 			global::Stetic.Gui.Initialize (this);
@@ -32,7 +28,7 @@ namespace FrontEnd
 			this.calendar1.Name = "calendar1";
 			this.calendar1.DisplayOptions = ((global::Gtk.CalendarDisplayOptions)(35));
 			this.vbox3.Add (this.calendar1);
-			global::Gtk.Box.BoxChild w1 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.calendar1]));
+			global::Gtk.Box.BoxChild w1 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.calendar1]));
 			w1.Position = 0;
 			w1.Expand = false;
 			w1.Fill = false;
@@ -48,7 +44,7 @@ namespace FrontEnd
 			this.textview1.WrapMode = ((global::Gtk.WrapMode)(2));
 			this.GtkScrolledWindow.Add (this.textview1);
 			this.vbox3.Add (this.GtkScrolledWindow);
-			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.GtkScrolledWindow]));
+			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.GtkScrolledWindow]));
 			w3.Position = 1;
 			// Container child vbox3.Gtk.Box+BoxChild
 			this.btnClose = new global::Gtk.Button ();
@@ -57,7 +53,7 @@ namespace FrontEnd
 			this.btnClose.UseUnderline = true;
 			this.btnClose.Label = global::Mono.Unix.Catalog.GetString ("Close");
 			this.vbox3.Add (this.btnClose);
-			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.btnClose]));
+			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.btnClose]));
 			w4.Position = 2;
 			w4.Expand = false;
 			w4.Fill = false;
