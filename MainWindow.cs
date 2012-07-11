@@ -50,7 +50,7 @@ public partial class MainWindow: Gtk.Window
 			return;
 		}
 		
-		string query = "SELECT CONVERT_TZ(DATE_ADD(date, INTERVAL time HOUR_SECOND), '+00:00','SYSTEM') , text FROM log ORDER BY date, id;";
+		string query = "SELECT DATE_ADD(date, INTERVAL time HOUR_SECOND) , text FROM log ORDER BY date, id;";
 		
 		MySqlDataReader rdr = MySQL_Stuff.ExecuteQuery(query);
 		
