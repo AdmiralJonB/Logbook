@@ -95,7 +95,7 @@ namespace FrontEnd
 		protected void HighlightEntries()
 		{
 			//Unmark the Dates
-			for(uint i = 0; i < 31; i++)
+			for(uint i = 0; i <= 31; i++)
 				calendar1.UnmarkDay(i);
 			
 			string query = "SELECT date FROM log WHERE MONTH(date)=" + (calendar1.Month + 1).ToString() + " AND YEAR(date)=" + calendar1.Year.ToString() + ";";
